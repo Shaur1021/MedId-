@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MedId</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7fafd;
+      margin: 0;
+      padding: 16px;
+      width: 350px;
+    }
+    h1, h2 {
+      color: #2a5d9f;
+      margin-top: 0;
+    }
+    label {
+      font-weight: 500;
+      color: #234;
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 12px 0;
+      border: 1px solid #bcd;
+      border-radius: 4px;
+      font-size: 1em;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    button {
+      background: #2a5d9f;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-bottom: 12px;
+      width: 100%;
+    }
+    button:hover {
+      background: #17406a;
+    }
+    #results {
+      margin-top: 18px;
+    }
+    #results > div {
+      background: #eaf3fb;
+      border-left: 4px solid #2a5d9f;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px #0001;
+    }
+    strong {
+      color: #17406a;
+    }
+    .header-container {
+  position: relative;
+  min-height: 40px;
+}
+.header-container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="header-container">
+  <h1>MedId</h1>
+  <img src="icon48.png" alt="MedId Logo" style="width:64px;height: 64px;">
+  </div>
+  <label for="symptoms">Symptoms:</label>
+  <input type="text" id="symptoms" placeholder="e.g. fever, cough">
+
+  <label for="duration">Duration:</label>
+  <input type="text" id="duration" placeholder="e.g. 3 days">
+
+  <button id="analyzeBtn">Analyze</button>
+
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
