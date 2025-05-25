@@ -3,7 +3,7 @@ Unzip the file.
 
 Then, go to chrome://extensions and enable developer mode with the button on top right of your screen.
 
-Now simply, click "Load Unpacked" and open the file, downloaded from above
+Now simply, click "Load Unpacked" and open the file, downloaded from above ***NOTE*** For windows ignore MacOsX file, Load ChromeExtension_Trial1
 
 To turn on the back-end server go to [Github Repo](https://github.com/Shaur1021/medid-backend/tree/main) and create an account on [Render.com](render.com). 
 
